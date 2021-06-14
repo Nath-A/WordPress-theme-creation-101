@@ -11,7 +11,8 @@ At the moment, I am working alone on this part of our client project. But the fi
 
 
 ## Why !?
-Benoit Changeat is our client for the client project and he needs a WordPress site for his coaching actity. It seems a great idea to learn to create a personal theme instead of using one already existent and toil to adapt it for what we need. So let's challenge ourself and learn something new :+1:
+Benoit Changeat is our client for the client project and he needs a WordPress site to present his coaching actity. It seems a great idea to learn to create a personal theme instead of using one already existant and toil to adapt it for what we need...
+So let's challenge ourself and learn something new :+1:
 
 ## Where !?
 In my messy pseudo work office in my messy appartment... Need to come back at BeCentral after "ce stupide rhume des foins des enfers" :sneezing_face: !
