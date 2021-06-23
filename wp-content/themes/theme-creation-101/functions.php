@@ -38,3 +38,6 @@ add_action('after_setup_theme','theme_creation_101_supports');
 
 add_action('wp_enqueue_scripts','theme_creation_101_register_assets');
 // Fires (se lance) when scripts and styles are enqueued
+
+    //WIP à partir d'ici
+add_filter('wp_title','theme_creation_101_title');
