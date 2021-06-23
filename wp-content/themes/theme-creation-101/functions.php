@@ -17,25 +17,24 @@ function theme_creation_101_register_assets()
     wp_register_style('material-icons','https://fonts.googleapis.com/icon?family=Material+Icons');
     // Register a CSS stylesheet
 
-                // NOT WORKING. NO IDEA WHY !!!
-    // wp_register_script('bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM');
-    // Register a new script. We can add dependances with an area if there is one between 2 scripts. 
     
+    wp_register_script('bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js',[], false, true);
+    // Register a new script. We can add dependances with an area if there is one between 2 scripts. Last true is to put script into footer
+    
+
     wp_enqueue_style('bootstrap');
     wp_enqueue_style('material-icons');
-    // Enqueue (Rajoute à la file d'attente) a CSS stylesheet
+    // Enqueue (Rajoute à la file d'attente) CSS stylesheets
     
-    // wp_enqueue_scripts('bootstrap');
-    // 
+    
+    wp_enqueue_script('bootstrap');
+    // Enqueue (Rajoute à la file d'attente) scripts
 }
-
-
-
 
 // THEN : ACTIONS
 
 add_action('after_setup_theme','theme_creation_101_supports');
-// Fires after the theme is loaded
+// Fires (se lance) after the theme is loaded
 
 add_action('wp_enqueue_scripts','theme_creation_101_register_assets');
 // Fires (se lance) when scripts and styles are enqueued
