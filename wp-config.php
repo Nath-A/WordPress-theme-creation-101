@@ -86,5 +86,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
 
+/** Add something found into stackoverflow (thank you https://stackoverflow.com/questions/18769141/wordpress-admin-not-loading-css-js) to load css */
+define('CONCATENATE_SCRIPTS', false); 
+
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
