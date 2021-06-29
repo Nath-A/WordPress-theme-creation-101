@@ -7,9 +7,11 @@
 
 function wp_theme_creation_101_supports()
 {
+    // add_theme_support : registers theme support for a given feature
     add_theme_support('title-tag');
-    // Registers theme support for a given feature
-    // title-tag = 
+    // title-tag = baseline
+    add_theme_support('post-thumbnails', array('post'));
+    // Enables  Post Thumbnails support for a theme. Note that you can optionally pass a second argument, $args, with an array of the Post Types for which you want to enable this feature.
 }
 
 function wp_theme_creation_101_register_assets()
