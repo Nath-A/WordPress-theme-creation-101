@@ -1,5 +1,7 @@
 <?php get_header() ?>
 
+<!-- Will be used to show all articles if there is no front-page.php  -->
+
 <?php if (have_posts()) : ?>
     <div class="row row-cols-1 row-cols-md-2 g-4">
         <?php while (have_posts()) : the_post() ?>

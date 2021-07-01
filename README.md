@@ -2,6 +2,8 @@
 
 ## What !?
 Let's learn and try to create a WordPress theme from scratch :muscle:
+[![Template Wordpress](https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png)](https://wphierarchy.com/)  
+:scream:
 
 ## How !?
 By following the [Grafikart tutorial](https://www.youtube.com/watch?v=H5CIUAXi0Uk&list=PLjwdMgw5TTLWF1VV9TFWrsUTvWjtGS7Qt) AND practicing at the same time here ! 
