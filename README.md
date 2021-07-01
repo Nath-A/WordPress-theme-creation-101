@@ -1,8 +1,9 @@
 # WordPress-theme-creation-101
 
 ## What !?
-Let's learn and try to create a WordPress theme from scratch :muscle:
-[![Template Wordpress](https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png)](https://wphierarchy.com/)  
+Let's learn and try to create a [WordPress theme from scratch](https://wphierarchy.com/) :muscle:
+![Template Wordpress](https://developer.wordpress.org/files/2014/10/Screenshot-2019-01-23-00.20.04.png)
+  
 :scream:
 
 ## How !?
