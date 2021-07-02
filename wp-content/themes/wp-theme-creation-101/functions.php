@@ -12,6 +12,10 @@ function wp_theme_creation_101_supports()
     // title-tag = baseline
     add_theme_support('post-thumbnails', array('post'));
     // Enables  Post Thumbnails support for a theme. Note that you can optionally pass a second argument, $args, with an array of the Post Types for which you want to enable this feature.
+    add_theme_support('menus');
+    // https://developer.wordpress.org/reference/functions/add_theme_support
+    // If I need more than once (maybe for blog) take a look at this : https://codex.wordpress.org/Navigation_Menus & https://developer.wordpress.org/reference/functions/register_nav_menus/
+    register_nav_menu('header','menu principal');
 }
 
 function wp_theme_creation_101_register_assets()
