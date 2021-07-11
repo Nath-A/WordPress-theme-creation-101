@@ -1,8 +1,12 @@
 // ACCUEIL - LIRE LA SUITE
-document.getElementById("index-lire-la-suite").addEventListener("click", lireLaSuite);
+function tropDeTexte()
+{
+    pave = document.getElementById("index-suite");
+    pave.style.display="none";
+}
 
 function lireLaSuite()
 {
-    indexSuite = document.getElementById("index-suite");
-    indexSuite.style.display="block";
+    pave = document.getElementById("index-suite");
+    pave.style.display="block";
 }
