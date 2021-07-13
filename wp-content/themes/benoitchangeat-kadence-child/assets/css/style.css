@@ -1,7 +1,174 @@
 /* GENERAL */
+h1, h2, h3
+{
+	line-height: 150%; 
+	font-weight:600;
+	
+}
+h2, h2.elementor-heading-title
+{
+	text-transform:uppercase; 
+	margin:25px 0 !important;
+	font-weight:600 !important;
+}
+
+.elementor-button
+{
+	font-weight: 400;
+	text-transform : uppercase;
+}
+
+.texte-blanc
+{
+	color:#fff !important;
+}
+
 
 /* CLASSES SPECIFIQUES */
+.cta-bleu .elementor-button
+{
+	background-color :#0F233F !important;
+	color:#fff;
+}
+
+.cta-bleu .elementor-button:hover
+{
+	color :#0F233F;
+	background-color:#fff !important;
+}
+
+.cta-jaune .elementor-button
+{
+	background-color :#F8AC3A !important;
+	color:#fff;
+}
+
+.cta-jaune .elementor-button:hover
+{
+	color :#F8AC3A;
+	background-color:#fff !important;
+}
+
+.cta-blanc .elementor-button
+{
+	color : #0F233F !important;
+	background-color:#fff !important;
+	
+}
+
+.cta-blanc .elementor-button:hover
+{
+	background-color : #0F233F !important;
+	color:#fff !important;
+	
+}
+
+.cta-bleu-jaune .elementor-button
+{
+	color :#F8AC3A !important;
+	background-color : #0F233F !important;
+}
+
+.cta-bleu-jaune .elementor-button:hover
+{
+	background-color :#F8AC3A !important;
+	color : #0F233F !important;
+}
+
+#index-baseline
+{
+	color:#fff;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+    font-size: large;
+	
+}
 
 /* POLISH */
 
+/*NAV BAR*/
+nav#site-navigation #primary-menu a
+{
+	text-transform:uppercase;
+	font-weight:500;
+	color :#0F233F;
+}
+
+nav .sub-menu a
+{
+	color:#fff !important;
+}
+
+/* FOOTER */
+footer
+{
+	padding:0 75px;
+	background-color:#0F233F;
+}
+footer h2
+{
+	text-transform:initial !important;
+
+}
+
+footer a:hover
+{
+	text-decoration:none !important;
+}
+
+footer img
+{
+	width:200px;
+	height:auto;
+	display:block;
+	margin: 0 auto;
+}
+
+footer ul#footer-rs
+{
+	display:grid;
+	grid-template-columns:repeat(4, 1fr);
+	list-style:none;
+	padding:0;
+	margin : auto;
+}
+
+footer i.fab
+{
+	font-size:1.5em;
+}
+
 /* INDEX */
+.cta-blanc-transparent .elementor-button
+{
+	text-transform:uppercase;
+	border: 3px solid #FFF;
+	background-color:rgba(0, 0, 0, 0.0) !important;
+	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.6));
+	border-radius:50px !important;
+}
+
+.cta-blanc-transparent .elementor-button:hover
+{
+	background-color:#ffffff !important;
+	color:#000;
+}
+
+.index-services-titres h3.elementor-heading-title
+{
+	color:#fff;
+	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.6));
+	font-weight: 600;
+}
+
+button#index-lire-la-suite
+{
+	text-align:right;
+	background-color:#0F233F !important;
+	color:#fff;
+}
+
+button#index-lire-la-suite:hover
+{
+	color:#0F233F;
+	background-color:#fff !important;
+}
