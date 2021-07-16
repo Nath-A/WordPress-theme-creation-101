@@ -1,0 +1,49 @@
+.carte
+{
+    display : grid;
+    grid-template-columns : auto 1fr auto;
+    border-radius : 50px;
+    color:#fff;
+    padding:50px 20px;
+}
+
+.contenu
+{
+    display : grid;
+    grid-template-columns : repeat(2,1fr);
+    grid-template-rows : auto 1fr;
+    align-content : center;
+    margin : 15px;
+    gap: 15px;
+}
+
+.contenu p, .contenu img
+{
+    align-self : center;
+    justify-self: center;
+} 
+
+.carte h3
+{
+    grid-column-start : 1 ;
+    grid-column-end : 3 ;
+    text-align : center;
+    margin-top: 0;
+}
+
+.carte i
+{
+    font-size : 4em;
+    align-self : center;
+}
+
+.carte .controleurs
+{
+    align-self : center;
+    margin : 15px;
+}
+
+#pour-qui
+{
+    background-color: #0F233F;
+}

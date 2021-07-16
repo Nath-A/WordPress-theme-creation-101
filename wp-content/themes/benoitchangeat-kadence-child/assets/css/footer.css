@@ -1,0 +1,38 @@
+/* FOOTER */
+footer
+{
+	padding:0 75px;
+	background-color:#0F233F;
+}
+footer h2
+{
+	text-transform:initial !important;
+
+}
+
+footer a:hover
+{
+	text-decoration:none !important;
+}
+
+footer img
+{
+	width:200px;
+	height:auto;
+	display:block;
+	margin: 0 auto;
+}
+
+footer ul#footer-rs
+{
+	display:grid;
+	grid-template-columns:repeat(4, 1fr);
+	list-style:none;
+	padding:0;
+	margin : auto;
+}
+
+footer i.fab
+{
+	font-size:1.5em;
+}

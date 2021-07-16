@@ -1,15 +1,26 @@
 /* GENERAL */
-h1, h2, h3
+h1.elementor-heading-title, h2.elementor-heading-title, h3.elementor-heading-title
 {
 	line-height: 150%; 
 	font-weight:600;
 	
 }
+h1
+{
+	font-size : 3.5em;
+}
+
 h2, h2.elementor-heading-title
 {
 	text-transform:uppercase; 
 	margin:25px 0 !important;
-	font-weight:600 !important;
+	font-weight:500 !important;
+	font-size:2.7em;
+}
+
+h3
+{
+	font-size:1.8em;
 }
 
 .elementor-button
@@ -23,6 +34,10 @@ h2, h2.elementor-heading-title
 	color:#fff !important;
 }
 
+a, a:hover
+{
+	font-weight : bold;
+}
 
 /* CLASSES SPECIFIQUES */
 .cta-bleu .elementor-button
@@ -75,12 +90,29 @@ h2, h2.elementor-heading-title
 	color : #0F233F !important;
 }
 
+.cta-vert .elementor-button
+{
+	background-color :#036564 !important;
+	color:#fff;
+}
+
+.cta-vert .elementor-button:hover
+{
+	color :#036564;
+	background-color:#fff !important;
+}
+
 #index-baseline
 {
 	color:#fff;
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
     font-size: large;
 	
+}
+
+#h1-accueil h1
+{
+	text-transform:initial;
 }
 
 /* POLISH */
@@ -171,4 +203,83 @@ button#index-lire-la-suite:hover
 {
 	color:#0F233F;
 	background-color:#fff !important;
+}
+
+/* INDEX - RESSOURCES GRATUITES */
+#ressources-gratuites-titre, #ressources-gratuites-titre .elementor-widget-wrap
+{
+	padding:0;
+}
+/* INDEX - LE COACHING QUESAQUO*/
+.carte
+{
+    display : grid;
+    grid-template-columns : auto 1fr auto;
+    border-radius : 50px;
+    color:#fff;
+    padding:50px 20px;
+}
+
+.contenu
+{
+    display : grid;
+    grid-template-columns : repeat(2,1fr);
+    grid-template-rows : auto 1fr;
+    align-content : center;
+    margin : 15px;
+    gap: 15px;
+}
+
+.contenu p, .contenu img
+{
+    align-self : center;
+    justify-self: center;
+    text-align: justify;
+} 
+
+.carte h3
+{
+    grid-column-start : 1 ;
+    grid-column-end : 3 ;
+    text-align : center;
+    margin-top: 0;
+	color:#fff;
+	text-transform:uppercase;
+}
+
+.carte i
+{
+    font-size : 4em;
+    align-self : center;
+}
+
+.carte .controleurs
+{
+    align-self : center;
+    margin : 15px;
+}
+
+.carte a 
+{
+    color:#F8AC3A;
+}
+
+.carte a:hover
+{
+    text-decoration:underline;
+}
+
+#pour-qui, #comment
+{
+    background-color: #0F233F;
+}
+
+#pour-quels-sujets, #avec-qui
+{
+    background-color: #033649;
+}
+
+#cest-quoi
+{
+    background-color: #036564;
 }
