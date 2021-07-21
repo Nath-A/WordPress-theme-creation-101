@@ -1,10 +1,13 @@
 .carte
 {
     display : grid;
-    grid-template-columns : auto 1fr auto;
+    grid-template-rows : 1fr auto;
     border-radius : 50px;
-    color:#fff;
+    color:#000;
     padding:50px 20px;
+    border:1px solid black;
+    /* box-shadow: 2px 2px 5px black; */
+   
 }
 
 .contenu
@@ -33,17 +36,45 @@
 
 .carte i
 {
-    font-size : 4em;
+    font-size : 2em;
     align-self : center;
 }
 
-.carte .controleurs
+.carte .controleurs-slides
 {
     align-self : center;
     margin : 15px;
+    display:grid;
+    grid-template-columns: repeat(5,auto);
+    justify-content:space-around;
+    
 }
 
-#pour-qui
+@media (max-width: 767.98px)
 {
-    background-color: #0F233F;
+    .carte .contenu
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr auto;
+        grid-template-areas: 
+            "titre"
+            "image"
+            "texte"
+        ;
+    }
+
+    .contenu h3
+    {
+        grid-area: titre;
+    }
+
+    .contenu p 
+    {
+        grid-area: texte;
+    }
+
+    .contenu img 
+    {
+        grid-area : image;
+    }
 }
