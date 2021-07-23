@@ -7,49 +7,77 @@ function lireLaSuite()
 }
 
 // ACCUEIL - CHANGEMENT DE SLIDE
+//Récupérer les boutons
+function onRecupereTout()
+{
+    boutonPourQui = document.getElementById("bouton-pour-qui");
+    boutonQuelsSujets = document.getElementById("bouton-quels-sujets");
+    boutonCEstQuoi = document.getElementById("bouton-cest-quoi");
+    boutonAvecQui = document.getElementById("bouton-avec-qui");
+    boutonComment = document.getElementById("bouton-comment");
+
+    //Récupérer les controleurs
+    controleurPourQui = document.getElementById("controleur-pour-qui").getElementsByTagName("i")[0];
+    controleurQuelsSujets = document.getElementById("controleur-quels-sujets").getElementsByTagName("i")[0];
+    controleurCEstQuoi = document.getElementById("controleur-cest-quoi").getElementsByTagName("i")[0];
+    controleurAvecQui = document.getElementById("controleur-avec-qui").getElementsByTagName("i")[0];
+    controleurComment = document.getElementById("controleur-comment").getElementsByTagName("i")[0];
+
+    //Récupérer les slides
+    slidePourQui = document.getElementById("slide-pour-qui");
+    slideQuelsSujets = document.getElementById("slide-quels-sujets");
+    slideCEstQuoi = document.getElementById("slide-cest-quoi");
+    slideAvecQui = document.getElementById("slide-avec-qui");
+    slideComment = document.getElementById("slide-comment");
+}
+
 
 function changeSlide($slide)
 {
+    // trotinette E scooter
+
     switch ($slide) 
     {
-        case avec-qui:
+        case pourQui:
             //slide demandée display grid
-            slideAvecQui = document.getElementById("slide-pour-qui");
-            slideAvecQui.style.display="grid";
+            slidePourQui.style.display="grid";
+            
             // autres slides masquées
-            slideQuelsSujet = document.getElementById("slide-quels-sujets");
-            slideQuelsSujet.style.display="none";
-
-            slideCEstQuoi = document.getElementById("slide-cest-quoi");
-            slideCEstQuoi.style.display="none";
-
-            slideAvecQui = document.getElementById("slide-avec-qui");
+            slideQuelsSujets.style.display="none";
+            slideCEstQuoi.style.display="none";            
             slideAvecQui.style.display="none";
-
-            slideComment = document.getElementById("slide-comment");
             slideComment.style.display="none";
 
-            // bouton de la slide active change de couleur
+            // bouton de la slide active change de couleur + autres boutons prennent la class cta-bleu
+            boutonPourQui.setAttribute("class","cta-blanc");
+            boutonQuelsSujets.setAttribute("class","cta-bleu");
+            boutonCEstQuoi.setAttribute("class","cta-bleu");
+            boutonAvecQui.setAttribute("class","cta-bleu");
+            boutonComment.setAttribute("class","cta-bleu");
             
-            // autres boutons prennent la class cta-bleu
-            // controleur de la slide active passe solid
-            // controleur des autres class passent regular
+            // controleur de la slide active passe solid et controleurs des autres class passent regular
+            controleurPourQui.setAttribute("class","fa fas");
+            controleurQuelsSujets.setAttribute("class","fa far");
+            controleurCEstQuoi.setAttribute("class","fa far");
+            controleurAvecQui.setAttribute("class","fa far");
+            controleurComment.setAttribute("class","fa far");
             
             break;
         
-        case quels-sujets :
+        case quelsSujets :
 
             break;
 
-        case cest-quoi:
+        case cEstQuoi:
 
             break;
 
-        case cest-quoi:
+        case avecQui:
 
+µ
             break;
 
-        case cest-quoi:
+        case comment:
 
             break;
 
