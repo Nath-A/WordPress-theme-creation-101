@@ -32,13 +32,13 @@ function onRecupereTout()
 }
 
 
-function changeSlide($slide)
+function changerSlide($slide)
 {
     // trotinette E scooter
 
     switch ($slide) 
     {
-        case pourQui:
+        case 'pourQui':
             //slide demandée display grid
             slidePourQui.style.display="grid";
             
@@ -56,28 +56,28 @@ function changeSlide($slide)
             boutonComment.setAttribute("class","cta-bleu");
             
             // controleur de la slide active passe solid et controleurs des autres class passent regular
-            controleurPourQui.setAttribute("class","fa fas");
-            controleurQuelsSujets.setAttribute("class","fa far");
-            controleurCEstQuoi.setAttribute("class","fa far");
-            controleurAvecQui.setAttribute("class","fa far");
-            controleurComment.setAttribute("class","fa far");
+            controleurPourQui.setAttribute("class","fa-circle fas");
+            controleurQuelsSujets.setAttribute("class","fa-circle far");
+            controleurCEstQuoi.setAttribute("class","fa-circle far");
+            controleurAvecQui.setAttribute("class","fa-circle far");
+            controleurComment.setAttribute("class","fa-circle far");
             
             break;
         
-        case quelsSujets :
+        case 'quelsSujets' :
 
             break;
 
-        case cEstQuoi:
+        case 'cEstQuoi':
 
             break;
 
-        case avecQui:
+        case 'avecQui':
 
 µ
             break;
 
-        case comment:
+        case 'comment':
 
             break;
 
