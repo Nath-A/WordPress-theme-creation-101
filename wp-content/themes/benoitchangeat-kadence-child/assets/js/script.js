@@ -6,7 +6,15 @@ function lireLaSuite()
     pave.style.display="block";
 }
 
-// ACCUEIL - LIENS VERS LES RESSOURCES
+// ACCUEIL - LIENS VERS LES RESSOURCES PENDING ! 
+function ressourcesGratuites($ressource)
+{
+	blog = document.getElementById("ressources-gratuites-blog");
+	infographie = document.getElementById("ressources-gratuites-infographies");
+	communaute = document.getElementById("ressources-gratuites-communaute");
+	guide = document.getElementById("ressources-gratuites-guide");
+	fiches = document.getElementById("ressources-gratuites-fiches");
+}
 
 // ACCUEIL - COACHING QUESACO
 
@@ -22,13 +30,6 @@ function changerSlide($slide)
     boutonComment = document.getElementById("bouton-comment");
 
     //Récupérer les controleurs
-    // controleurPourQui = document.getElementById("controleur-pour-qui").getElementsByTagName("i")[0];
-    // console.log(controleurAvecQui);
-    // controleurQuelsSujets = document.getElementById("controleur-quels-sujets").getElementsByTagName("i")[0];
-    // controleurCEstQuoi = document.getElementById("controleur-cest-quoi").getElementsByTagName("i")[0];
-    // controleurAvecQui = document.getElementById("controleur-avec-qui").getElementsByTagName("i")[0];
-    // controleurComment = document.getElementById("controleur-comment").getElementsByTagName("i")[0];
-
     controleurPourQui = document.getElementById("controleur-pour-qui");
     controleurQuelsSujets = document.getElementById("controleur-quels-sujets");
     controleurCEstQuoi = document.getElementById("controleur-cest-quoi");
@@ -41,21 +42,19 @@ function changerSlide($slide)
     slideCEstQuoi = document.getElementById("slide-cest-quoi");
     slideAvecQui = document.getElementById("slide-avec-qui");
     slideComment = document.getElementById("slide-comment");
-
-    //N'afficher que la premiere slide (ca fonctionne pas sinon...)
+	
+	//N'afficher que la premiere slide (ca fonctionne pas sinon...)
     slidePourQui.style.display = "grid";
     slideQuelsSujets.style.display = "none";
     slideCEstQuoi.style.display = "none";
     slideAvecQui.style.display = "none";
     slideComment.style.display = "none";
+	
+	boutonPourQui.setAttribute("class","cta-blanc");
+	controleurPourQui.setAttribute("class","fas fa-circle");
 
-    boutonPourQui.setAttribute("class","cta-blanc");
-    controleurPourQui.setAttribute("class","fas fa-circle");
-
-    
-    
     switch ($slide) 
-    { 
+    {
         case 'pourQui':
             //slide demandée display grid + autres slides masquées
             slidePourQui.style.display="grid";
@@ -97,7 +96,7 @@ function changerSlide($slide)
 
             // controleur de la slide active passe solid et controleurs des autres class passent regular
             controleurPourQui.setAttribute("class","far fa-circle");
-            controleurQuelsSujets.setAttribute("class","fas fa-square");
+            controleurQuelsSujets.setAttribute("class","fas fa-circle");
             controleurCEstQuoi.setAttribute("class","far fa-circle");
             controleurAvecQui.setAttribute("class","far fa-circle");
             controleurComment.setAttribute("class","far fa-circle");
@@ -171,11 +170,10 @@ function changerSlide($slide)
             controleurCEstQuoi.setAttribute("class","far fa-circle");
             controleurAvecQui.setAttribute("class","far fa-circle");
             controleurComment.setAttribute("class","fas fa-circle");
-            console.log(controleurComment);
 
             break;
 
-        default:   
+        default:
             break;
     } 
 }
