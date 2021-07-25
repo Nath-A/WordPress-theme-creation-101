@@ -42,9 +42,20 @@ function changerSlide($slide)
     slideAvecQui = document.getElementById("slide-avec-qui");
     slideComment = document.getElementById("slide-comment");
 
+    //N'afficher que la premiere slide (ca fonctionne pas sinon...)
+    slidePourQui.style.display = "grid";
+    slideQuelsSujets.style.display = "none";
+    slideCEstQuoi.style.display = "none";
+    slideAvecQui.style.display = "none";
+    slideComment.style.display = "none";
 
+    boutonPourQui.setAttribute("class","cta-blanc");
+    controleurPourQui.setAttribute("class","fas fa-circle");
+
+    
+    
     switch ($slide) 
-    {
+    { 
         case 'pourQui':
             //slide demandée display grid + autres slides masquées
             slidePourQui.style.display="grid";
@@ -86,7 +97,7 @@ function changerSlide($slide)
 
             // controleur de la slide active passe solid et controleurs des autres class passent regular
             controleurPourQui.setAttribute("class","far fa-circle");
-            controleurQuelsSujets.setAttribute("class","far fa-square");
+            controleurQuelsSujets.setAttribute("class","fas fa-square");
             controleurCEstQuoi.setAttribute("class","far fa-circle");
             controleurAvecQui.setAttribute("class","far fa-circle");
             controleurComment.setAttribute("class","far fa-circle");
@@ -160,12 +171,13 @@ function changerSlide($slide)
             controleurCEstQuoi.setAttribute("class","far fa-circle");
             controleurAvecQui.setAttribute("class","far fa-circle");
             controleurComment.setAttribute("class","fas fa-circle");
+            console.log(controleurComment);
 
             break;
 
-        default:
+        default:   
             break;
     } 
 }
 
-window.addEventListener("load", changerSlide('pourQui'));
+window.addEventListener("load", changerSlide);
