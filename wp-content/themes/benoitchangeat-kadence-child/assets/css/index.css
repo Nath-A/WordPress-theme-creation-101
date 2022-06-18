@@ -1,0 +1,228 @@
+#index-baseline
+{
+	color:#fff;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6);
+    font-size: 1.8em;
+	text-transform:uppercase;
+	
+}
+
+#h1-accueil h1
+{
+	text-transform:initial;
+	color:#0F233F;
+}
+.cta-blanc-transparent .elementor-button
+{
+	text-transform:uppercase;
+	border: 3px solid #FFF;
+	background-color:rgba(0, 0, 0, 0.0) !important;
+	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.6));
+	border-radius:50px !important;
+}
+
+.cta-blanc-transparent .elementor-button:hover
+{
+	background-color:#ffffff !important;
+	color:#000;
+}
+
+.index-services-titres h3.elementor-heading-title
+{
+	color:#fff;
+	filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.6));
+	font-weight: 600;
+}
+
+button#index-lire-la-suite
+{
+	text-align:right;
+	background-color:#0F233F !important;
+	color:#fff;
+}
+
+button#index-lire-la-suite:hover
+{
+	color:#0F233F;
+	background-color:#fff !important;
+}
+/*INDEX - SERVICES*/
+.index-services-titres .elementor-widget-container
+{
+	min-height:236px;
+	display:flex;
+	justify-content:center;
+}
+
+.index-services-titres .elementor-widget-container h3.elementor-heading-title
+{
+	align-self:center;
+}
+
+/* INDEX - RESSOURCES GRATUITES */
+#ressources-gratuites-titre, #ressources-gratuites-titre .elementor-widget-wrap
+{
+	padding:0;
+}
+
+/* INDEX - LE COACHING QUESACO*/
+
+#coaching-quesaco-boutons .elementor-shortcode
+{
+	display:flex;
+	justify-content: center;
+}
+
+#coaching-quesaco-boutons .cta-blanc
+{
+	border:1px solid #0F233F;
+}
+
+#coaching-quesaco-slides .elementor-widget
+{
+	margin-bottom:0;
+}
+
+.carte
+{
+    display : grid;
+    grid-template-rows : 1fr auto;
+    border-radius : 50px;
+    color:#000;
+    padding:30px;
+    border:1px solid black;
+    /* box-shadow: 2px 2px 5px black; */
+   
+}
+
+.contenu
+{
+    display : grid;
+    grid-template-columns : repeat(2,1fr);
+    grid-template-rows : auto 1fr;
+    align-content : center;
+    margin : 15px;
+    column-gap: 35px;
+	row-gap:20px;
+}
+
+.contenu p, .contenu img
+{
+    align-self : center;
+    justify-self: center;
+} 
+
+.contenu p
+{
+	text-align:justify;
+}
+.contenu img
+{
+    width:100%;
+    height: auto;
+}
+
+.carte h3
+{
+    grid-column-start : 1 ;
+    grid-column-end : 3 ;
+    text-align : center;
+    margin-top: 0;
+}
+
+.carte .controleurs-slides i
+{
+    font-size : 1.5em;
+    align-self : center;
+}
+
+.carte .controleurs-slides
+{
+    align-self : center;
+    margin : 15px;
+    display:grid;
+    grid-template-columns: repeat(5,auto);
+    justify-content:space-around;
+/* 	padding: 0 20vh; */
+    
+}
+
+.controleurs-slides button
+{
+	background:none;
+	color:#0F233F;
+}
+
+@media (max-width: 767.98px)
+{
+    .carte .contenu
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas: 
+            "titre"
+            "image"
+            "texte"
+        ;
+    }
+
+    .contenu h3
+    {
+        grid-area: titre;
+    }
+
+    .contenu p 
+    {
+        grid-area: texte;
+    }
+
+    .contenu img 
+    {
+        grid-area : image;
+    }
+}
+
+/*INDEX - Je te l'offre*/
+#index-livre-blanc #nf-field-13
+{
+	color : #0F233F !important;
+	background-color:#fff !important;
+}
+
+
+#index-livre-blanc #nf-field-13:hover
+{
+	background-color : #0F233F !important;
+	color:#fff !important;
+	
+}
+
+#index-livre-blanc .nf-field-element
+{
+	display:flex;
+	justify-content:flex-end;
+}
+
+#index-livre-blanc .nf-response-msg a
+{
+	color:#F8AC3A !important;
+}
+
+#index-livre-blanc .nf-response-msg a:hover
+{
+	color:#ffffff !important;
+}
+
+/*INDEX - APPEL GRATUIT*/
+#index-appel-gratuit .elementor-widget-heading, #index-appel-gratuit .elementor-widget-heading h2.elementor-heading-title, #index-appel-gratuit .elementor-widget-text-editor
+{
+	margin-bottom: 0 !important;
+}
+
+/*INDEX - CONTACT*/
+
+#index-contact h2
+{
+	text-shadow : 2px 2px 3px rgba(255,255,255,0.6);
+} 
+

@@ -1,0 +1,4 @@
+!.gitignore
+!wp-content/themes/benoitchangeat-kadence-child
+!wp-config.php
+!README.md

@@ -1,0 +1,40 @@
+/* GENERAL */
+h1.elementor-heading-title, h2.elementor-heading-title, h3.elementor-heading-title
+{
+	line-height: 150%; 
+	font-weight:600;
+	
+}
+h1
+{
+	font-size : 3.5em;
+}
+
+h2, h2.elementor-heading-title
+{
+	text-transform:uppercase; 
+	margin:25px 0 !important;
+	font-weight:500 !important;
+	font-size:2.7em;
+}
+
+h3
+{
+	font-size:1.8em;
+}
+
+.elementor-button
+{
+	font-weight: 400;
+	text-transform : uppercase;
+}
+
+.texte-blanc
+{
+	color:#fff !important;
+}
+
+a, a:hover
+{
+	font-weight : bold;
+}

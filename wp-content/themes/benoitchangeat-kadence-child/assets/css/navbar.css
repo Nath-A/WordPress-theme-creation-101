@@ -1,0 +1,12 @@
+/*NAV BAR*/
+nav#site-navigation #primary-menu a
+{
+	text-transform:uppercase;
+	font-weight:500;
+	color :#0F233F;
+}
+
+nav .sub-menu a
+{
+	color:#fff !important;
+}
